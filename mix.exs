@@ -29,7 +29,10 @@ defmodule IntoLog.MixProject do
   end
 
   defp deps do
-    []
+    [
+      {:mix_test_watch, "~> 1.0", only: [:dev, :test], runtime: false},
+      {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
+    ]
   end
 
   defp package do
