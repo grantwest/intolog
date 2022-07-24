@@ -36,8 +36,7 @@ defmodule IntoLog.MixProject do
     %{
       licenses: ["Apache-2.0"],
       maintainers: ["Grant West"],
-      links: %{"GitHub" => "https://github.com/grantwest/intolog"},
-      files: ["lib", "mix.exs", "README.md", "LICENSE", "src"]
+      links: %{"GitHub" => "https://github.com/grantwest/intolog"}
     }
   end
 end
