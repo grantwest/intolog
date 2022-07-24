@@ -14,9 +14,6 @@ defmodule IntoLogTest do
     assert capture_log(fn -> Enum.into([msg], IntoLog.log(:info)) end) =~ "[info]  #{msg}"
 
     msg = msg()
-    assert capture_log(fn -> Enum.into([msg], IntoLog.log(:warn)) end) =~ "[warning] #{msg}"
-
-    msg = msg()
     assert capture_log(fn -> Enum.into([msg], IntoLog.log(:error)) end) =~ "[error] #{msg}"
   end
 
@@ -28,7 +25,7 @@ defmodule IntoLogTest do
     assert log =~ "function=test uses calling module for metadata/1"
     assert log =~ "mfa=IntoLogTest.\"test uses calling module for metadata\"/1"
     assert log =~ "file=test/into_log_test.exs"
-    assert log =~ "line=25"
+    assert log =~ "line=22"
     # assert log =~ "application=into_log"
   end
 

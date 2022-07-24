@@ -8,7 +8,7 @@ defmodule IntoLog.MixProject do
     [
       app: :into_log,
       version: @version,
-      elixir: "~> 1.10",
+      elixir: "~> 1.11",
       deps: deps(),
       package: package(),
       description: @description,
